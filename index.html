@@ -17,6 +17,7 @@
         #modal { transition: opacity 0.3s ease; }
         .img-thumbnail { cursor: pointer; transition: all 0.2s; border: 2px solid transparent; }
         .img-thumbnail:hover { border-color: #10b981; transform: scale(1.02); }
+        .flag-icon { width: 24px; height: 18px; border-radius: 2px; object-fit: cover; flex-shrink: 0; }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col">
@@ -51,17 +52,23 @@
                         <p class="text-emerald-700 max-w-lg font-medium">Comparteix la teva infusió o beguda preferida amb la comunitat del centre. Tria l'idioma i omple el formulari:</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full md:w-auto">
+                        <!-- Català -->
                         <a href="https://forms.gle/iJZMDw4TBpQ8Ebgx9" target="_blank" 
-                           class="flex items-center justify-center gap-2 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
-                            <span class="text-xl">🇦🇩</span> Català
+                           class="flex items-center justify-center gap-3 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
+                           <svg class="flag-icon" viewBox="0 0 9 6"><rect fill="#FCD116" width="9" height="6"/><rect fill="#CE1126" width="9" height="0.66"/><rect fill="#CE1126" y="1.33" width="9" height="0.66"/><rect fill="#CE1126" y="2.66" width="9" height="0.66"/><rect fill="#CE1126" y="4" width="9" height="0.66"/><rect fill="#CE1126" y="5.33" width="9" height="0.66"/></svg>
+                           Català
                         </a>
+                        <!-- Castellano -->
                         <a href="https://forms.gle/eeL3fm7QQvZCzofz9" target="_blank" 
-                           class="flex items-center justify-center gap-2 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
-                            <span class="text-xl">🇪🇸</span> Castellano
+                           class="flex items-center justify-center gap-3 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
+                           <svg class="flag-icon" viewBox="0 0 750 500"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>
+                           Castellano
                         </a>
+                        <!-- English -->
                         <a href="https://forms.gle/Fymcd2ESHu1ywJsu8" target="_blank" 
-                           class="flex items-center justify-center gap-2 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
-                            <span class="text-xl">🇬🇧</span> English
+                           class="flex items-center justify-center gap-3 bg-white text-emerald-800 font-bold px-6 py-4 rounded-2xl shadow-sm hover:bg-emerald-100 transition-all border border-emerald-200">
+                           <svg class="flag-icon" viewBox="0 0 60 30"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                           English
                         </a>
                     </div>
                 </div>
